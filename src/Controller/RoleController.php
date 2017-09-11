@@ -8,7 +8,7 @@ namespace MSBios\Guard\CPanel\Doctrine\Controller;
 
 use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractLazyActionController;
 use MSBios\Guard\CPanel\Controller\RoleController as DefaultRoleController;
-use MSBios\Guard\Resource\Entity\Role;
+use MSBios\Guard\Resource\Doctrine\Entity\Role;
 
 /**
  * Class RoleController

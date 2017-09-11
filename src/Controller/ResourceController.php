@@ -8,7 +8,7 @@ namespace MSBios\Guard\CPanel\Doctrine\Controller;
 
 use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractLazyActionController;
 use MSBios\Guard\CPanel\Controller\ResourceController as DefaultResourceController;
-use MSBios\Guard\Resource\Entity\Resource;
+use MSBios\Guard\Resource\Doctrine\Entity\Resource;
 
 /**
  * Class ResourceController
