@@ -10,7 +10,6 @@ use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractLazyActionController;
 use MSBios\Guard\CPanel\Controller\RoleController as DefaultRoleController;
 use MSBios\Guard\Resource\Entity\Role;
 
-
 /**
  * Class RoleController
  * @package MSBios\Guard\CPanel\Doctrine\Controller
@@ -32,5 +31,4 @@ class RoleController extends AbstractLazyActionController
     {
         return DefaultRoleController::class;
     }
-
 }

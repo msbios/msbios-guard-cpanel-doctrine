@@ -31,5 +31,4 @@ class ResourceController extends AbstractLazyActionController
     {
         return DefaultResourceController::class;
     }
-
 }

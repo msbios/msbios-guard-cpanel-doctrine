@@ -17,7 +17,6 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
  */
 class Module implements
     ModuleInterface,
-//    BootstrapListenerInterface,
     AutoloaderProviderInterface
 {
     const VERSION = '0.0.1';
@@ -29,26 +28,6 @@ class Module implements
     {
         return include __DIR__ . '/../config/module.config.php';
     }
-
-//    /**
-//     * Listen to the bootstrap event
-//     *
-//     * @param EventInterface $e
-//     * @return array
-//     */
-//    public function onBootstrap(EventInterface $e)
-//    {
-//        /** @var ApplicationInterface $target */
-//        $target = $e->getTarget();
-//
-//        /** @var ServiceLocatorInterface $serviceManager */
-//        $serviceManager = $target->getServiceManager();
-//
-//        (new LazyListenerAggregate(
-//            $serviceManager->get(self::class)->get('listeners')->toArray(),
-//            $serviceManager
-//        ))->attach($target->getEventManager());
-//    }
 
     /**
      * Return an array for passing to Zend\Loader\AutoloaderFactory.
