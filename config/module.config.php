@@ -13,7 +13,7 @@ return [
     'doctrine' => [
         'authentication' => [
             'orm_default' => [
-                'identity_class' => \MSBios\Guard\Resource\Entity\User::class,
+                'identity_class' => \MSBios\Guard\Resource\Doctrine\UserInterface::class,
                 'identity_property' => 'username',
                 'credential_property' => 'password'
             ],
@@ -65,34 +65,10 @@ return [
         ]
     ],
 
-    'service_manager' => [
-        'invokables' => [
-//            // Listeners
-//            Listener\ForbiddenListener::class
-        ],
-        'factories' => [
-//            Module::class =>
-//                Factory\ModuleFactory::class,
-//
-//            // Providers
-//            Provider\Identity\AuthenticationProvider::class =>
-//                Factory\AuthenticationProviderFactory::class
-        ]
-    ],
-
     'form_elements' => [
-        'factories' => [
-        ],
         'aliases' => [
             Controller\UserController::class =>
                 \MSBios\Guard\Resource\Form\UserForm::class
-        ]
-    ],
-
-    'input_filters' => [
-        'invokables' => [
-        ],
-        'factories' => [
         ]
     ],
 
@@ -118,27 +94,11 @@ return [
         ],
     ],
 
-    \MSBios\Guard\Module::class => [
-        'role_providers' => [
-        ],
-
-        'resource_providers' => [
-        ],
-
-        'rule_providers' => [
-        ],
-    ],
 
     Module::class => [
 
         // Module listeners
         'listeners' => [
-//            Listener\ForbiddenListener::class => [
-//                'listener' => Listener\ForbiddenListener::class,
-//                'method' => 'onDispatchError',
-//                'event' => \Zend\Mvc\MvcEvent::EVENT_DISPATCH_ERROR,
-//                'priority' => -100900,
-//            ],
         ]
     ],
 ];
