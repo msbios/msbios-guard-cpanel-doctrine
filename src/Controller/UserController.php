@@ -8,7 +8,7 @@ namespace MSBios\Guard\CPanel\Doctrine\Controller;
 
 use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractLazyActionController;
 use MSBios\Guard\CPanel\Controller\UserController as DefaultUserController;
-use MSBios\Guard\Resource\Entity\User;
+use MSBios\Guard\Resource\Doctrine\Entity\User;
 use Zend\Crypt\Password\Bcrypt;
 use Zend\EventManager\EventInterface;
 use Zend\Mvc\MvcEvent;
