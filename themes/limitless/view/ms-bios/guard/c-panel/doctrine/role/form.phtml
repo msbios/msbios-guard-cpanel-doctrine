@@ -20,58 +20,29 @@ $form->prepare();
         ])); ?>
 
         <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('firstname')
+            'element' => $form->get('name')
                 ->setAttributes([
                     'required' => 'required',
-                    'placeholder' => $this->translate('Enter user first name')
+                    'placeholder' => $this->translate('Enter name')
                 ]),
-            'label' => $this->translate('First Name'),
+            'label' => $this->translate('Name'),
         ]); ?>
 
         <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('lastname')
+            'element' => $form->get('code')
                 ->setAttributes([
                     'required' => 'required',
-                    'placeholder' => $this->translate('Enter user last name')
+                    'placeholder' => $this->translate('Enter name')
                 ]),
-            'label' => $this->translate('Last Name')
+            'label' => $this->translate('Code'),
         ]); ?>
 
         <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('username')
+            'element' => $form->get('parent')
                 ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter username')
+                    'placeholder' => $this->translate('Select parent')
                 ]),
-            'label' => $this->translate('Username')
-        ]); ?>
-
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('email')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter user email'),
-                    'autocomplete' => 'off'
-                ]),
-            'label' => $this->translate('Email')
-        ]); ?>
-
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('password')
-                ->setAttributes([
-                    'placeholder' => $this->translate('Enter user password'),
-                    'autocomplete' => 'off'
-                ]),
-            'label' => $this->translate('Password')
-        ]); ?>
-
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('confirm')
-                ->setAttributes([
-                    'placeholder' => $this->translate('Confirm user password'),
-                    'autocomplete' => 'off'
-                ]),
-            'label' => $this->translate('Confirm')
+            'label' => $this->translate('Parent'),
         ]); ?>
 
         <div class="text-right">

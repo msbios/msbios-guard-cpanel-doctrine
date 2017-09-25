@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b9b2d8c-689e-4bc1-ba21-3081489b612d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/info.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/add.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/edit.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/add.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/edit.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/add.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/edit.phtml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/msbios-guard-cpanel-doctrine.iml" afterPath="$PROJECT_DIR$/.idea/msbios-guard-cpanel-doctrine.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.config.php" afterPath="$PROJECT_DIR$/config/application.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/module.config.php" afterPath="$PROJECT_DIR$/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml" afterPath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/index.phtml" afterPath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/index.phtml" afterPath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml" afterPath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/index.phtml" afterPath="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/index.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,26 +18,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="module.config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="module.config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="92" column="96" lean-forward="false" selection-start-line="92" selection-start-column="96" selection-end-line="92" selection-end-column="96" />
               <folding>
                 <element signature="e#209#496#1#PHP" expanded="false" />
                 <element signature="e#515#1493#1#PHP" expanded="false" />
-                <element signature="e#1517#1830#1#PHP" expanded="false" />
-                <element signature="e#2160#3430#1#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/msbios/guard-resource/src/Form/ResourceForm.php">
+      <file leaf-file-name="form.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="307">
+              <caret line="42" column="68" lean-forward="false" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -63,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+              <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -82,8 +64,42 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="311">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ResourceController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <element signature="e#6#90#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/RoleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+              <folding>
+                <element signature="e#143#214#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractLazyActionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/msbios/cpanel-doctrine/src/Mvc/Controller/AbstractLazyActionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="216" column="0" lean-forward="true" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,43 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="msbios-guard-cpanel-doctrine-module.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/msbios-guard-cpanel-doctrine-module.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#7#32#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/msbios/guard-resource-doctrine/src/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="98" column="32" lean-forward="false" selection-start-line="98" selection-start-column="32" selection-end-line="104" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="62" column="100" lean-forward="true" selection-start-line="62" selection-start-column="100" selection-end-line="62" selection-end-column="100" />
+            <state relative-caret-position="210">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="100" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -168,12 +152,14 @@
         <option value="$PROJECT_DIR$/bin/info.php" />
         <option value="$PROJECT_DIR$/config/application.config.php" />
         <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/vendor/msbios/cpanel-doctrine/src/Mvc/Controller/AbstractLazyActionController.php" />
         <option value="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/index.phtml" />
         <option value="$PROJECT_DIR$/vendor/msbios/guard-resource/src/Form/ResourceForm.php" />
         <option value="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/index.phtml" />
         <option value="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml" />
+        <option value="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/index.phtml" />
+        <option value="$PROJECT_DIR$/vendor/msbios/cpanel-doctrine/src/Mvc/Controller/AbstractLazyActionController.php" />
         <option value="$PROJECT_DIR$/config/module.config.php" />
+        <option value="$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml" />
       </list>
     </option>
   </component>
@@ -213,6 +199,166 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guard-resource" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guard-resource" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="limitless" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ms-bios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="c-panel" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msbios-guard-cpanel-doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="limitless" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ms-bios" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="c-panel" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="role" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,14 +598,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -475,8 +613,6 @@
           <folding>
             <element signature="e#209#496#1#PHP" expanded="false" />
             <element signature="e#515#1493#1#PHP" expanded="false" />
-            <element signature="e#1517#1830#1#PHP" expanded="false" />
-            <element signature="e#2160#3430#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -534,8 +670,6 @@
           <folding>
             <element signature="e#209#496#1#PHP" expanded="false" />
             <element signature="e#515#1493#1#PHP" expanded="false" />
-            <element signature="e#1517#1830#1#PHP" expanded="false" />
-            <element signature="e#2160#3430#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,13 +738,6 @@
         <state relative-caret-position="315">
           <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/RoleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -691,6 +818,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,6 +826,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,6 +834,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -712,13 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/msbios/cpanel-doctrine/src/Mvc/Controller/AbstractLazyActionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="222" column="30" lean-forward="false" selection-start-line="222" selection-start-column="30" selection-end-line="222" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -740,14 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -782,7 +897,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="98" column="32" lean-forward="false" selection-start-line="98" selection-start-column="32" selection-end-line="104" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,40 +919,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/index.phtml">
+    <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="292">
+          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="62" column="100" lean-forward="true" selection-start-line="62" selection-start-column="100" selection-end-line="62" selection-end-column="100" />
+        <state relative-caret-position="210">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="100" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml">
+    <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="311">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="e#143#214#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/msbios/cpanel-doctrine/src/Mvc/Controller/AbstractLazyActionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="216" column="0" lean-forward="true" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/module.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="327">
+          <caret line="92" column="96" lean-forward="false" selection-start-line="92" selection-start-column="96" selection-end-line="92" selection-end-column="96" />
           <folding>
             <element signature="e#209#496#1#PHP" expanded="false" />
             <element signature="e#515#1493#1#PHP" expanded="false" />
-            <element signature="e#1517#1830#1#PHP" expanded="false" />
-            <element signature="e#2160#3430#1#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="42" column="68" lean-forward="false" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

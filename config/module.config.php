@@ -65,6 +65,8 @@ return [
         'aliases' => [
             Controller\ResourceController::class =>
                 \MSBios\Guard\Resource\Form\ResourceForm::class,
+            Controller\RoleController::class =>
+                \MSBios\Guard\Resource\Form\RoleForm::class,
             Controller\UserController::class =>
                 \MSBios\Guard\Resource\Form\UserForm::class,
         ]
@@ -84,6 +86,11 @@ return [
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml',
                     'ms-bios/guard/c-panel/doctrine/resource/edit' =>
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml',
+
+                    'ms-bios/guard/c-panel/doctrine/role/add' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml',
+                    'ms-bios/guard/c-panel/doctrine/role/edit' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml',
 
                     'ms-bios/guard/c-panel/doctrine/user/add' =>
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/form.phtml',
