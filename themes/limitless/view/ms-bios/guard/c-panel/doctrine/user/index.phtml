@@ -74,6 +74,10 @@ $this->headScript()
                             <th><?= $this->translate('First Name'); ?></th>
                             <th><?= $this->translate('Last Name'); ?></th>
                             <th><?= $this->translate('Username'); ?></th>
+                            <td class="text-center" width="50">
+                                <?= $this->translate('State'); ?>
+                            </th>
+                            <th><?= $this->translate('Created At'); ?></th>
                             <th width="1px" class="text-center">
                                 <?= $this->translate('Actions'); ?>
                             </th>
@@ -81,12 +85,24 @@ $this->headScript()
                         </thead>
 
                         <tbody>
-                        <?php /** @var \MSBios\Guard\Resource\Entity\User $item */ ?>
+                        <?php /** @var \MSBios\Guard\Resource\Doctrine\Entity\User $item */ ?>
                         <?php foreach ($this->paginator as $item): ?>
                             <tr>
                                 <td><?= $this->escapeHtml($item->getFirstname()); ?></td>
                                 <td><?= $this->escapeHtml($item->getLastname()); ?></td>
                                 <td><?= $this->escapeHtml($item->getUsername()); ?></td>
+                                <td class="text-center">
+                                    <span class="label border-info text-info-600">
+                                        <?= $this->escapeHtml($item->getState()); ?>
+                                    </span>
+                                </td>
+                                <td>
+                                    <?= $this->dateFormat(
+                                        $item->getCreatedAt(),
+                                        \IntlDateFormatter::MEDIUM,
+                                        \IntlDateFormatter::SHORT);
+                                    ?>
+                                </td>
                                 <td class="text-center">
 
                                     <?php /** @var string $identifierTrashModal */ ?>

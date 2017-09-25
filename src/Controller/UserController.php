@@ -12,6 +12,7 @@ use MSBios\Guard\Resource\Doctrine\Entity\User;
 use Zend\Crypt\Password\Bcrypt;
 use Zend\EventManager\EventInterface;
 use Zend\Mvc\MvcEvent;
+use Zend\Stdlib\Parameters;
 
 /**
  * Class UserController
@@ -71,7 +72,7 @@ class UserController extends AbstractLazyActionController
         $entity = $e->getParam('entity');
         $entity->setPassword($object->getPassword());
 
-        /** @var array $data */
+        /** @var Parameters $data */
         $data = $e->getParam('data');
 
         if (! empty($data['password'])) {

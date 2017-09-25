@@ -51,10 +51,6 @@ return [
     ],
 
     'controllers' => [
-
-        'abstract_factories' => [
-        ],
-
         'factories' => [
             Controller\ResourceController::class =>
                 InvokableFactory::class,
@@ -67,8 +63,10 @@ return [
 
     'form_elements' => [
         'aliases' => [
+            Controller\ResourceController::class =>
+                \MSBios\Guard\Resource\Form\ResourceForm::class,
             Controller\UserController::class =>
-                \MSBios\Guard\Resource\Form\UserForm::class
+                \MSBios\Guard\Resource\Form\UserForm::class,
         ]
     ],
 
@@ -80,7 +78,17 @@ return [
                     __DIR__ . '/../themes/limitless/view/',
                 ],
 
-                'controller_map' => [
+                'template_map' => [
+
+                    'ms-bios/guard/c-panel/doctrine/resource/add' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml',
+                    'ms-bios/guard/c-panel/doctrine/resource/edit' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml',
+
+                    'ms-bios/guard/c-panel/doctrine/user/add' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/form.phtml',
+                    'ms-bios/guard/c-panel/doctrine/user/edit' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/form.phtml',
                 ],
 
                 'translation_file_patterns' => [
@@ -93,7 +101,6 @@ return [
             ],
         ],
     ],
-
 
     Module::class => [
 

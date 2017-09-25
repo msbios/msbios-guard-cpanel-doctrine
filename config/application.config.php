@@ -8,33 +8,47 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-
-        'Zend\Form',
-
-        'Zend\Mvc\Plugin\FlashMessenger',
+        'Zend\Cache',
+        'Zend\Paginator',
         'Zend\I18n',
         'Zend\Navigation',
-        'Zend\Router',
+        'Zend\Mvc\Plugin\FilePrg',
+        'Zend\Mvc\Plugin\Identity',
+        'Zend\Mvc\Plugin\Prg',
+        'Zend\Mvc\Plugin\FlashMessenger',
+        'Zend\Form',
         'Zend\InputFilter',
+        'Zend\Filter',
         'Zend\Hydrator',
+        'Zend\Session',
+        'Zend\Router',
+        'Zend\Validator',
 
         'DoctrineModule',
         'DoctrineORMModule',
+        'DoctrineDataFixtureModule',
 
-        'MSBios\Assetic',
+        'MSBios\Doctrine',
+        'MSBios\I18n',
         'MSBios\Widget',
         'MSBios\Theme',
+        'MSBios\Resource',
         'MSBios\Navigation',
         'MSBios\Application',
-
-        'MSBios\Resource',
         'MSBios\Authentication',
         'MSBios\Guard',
-        'MSBios\Guard\CPanel',
         'MSBios\Guard\Resource',
+        'MSBios\Guard\CPanel',
         'MSBios\CPanel',
+        'MSBios\CPanel\Doctrine',
 
-        'Zend\Log',
+        'MSBios\Authentication\Doctrine',
+        'MSBios\Guard\CPanel\Doctrine',
+        'MSBios\Guard\Resource\Doctrine',
+        'MSBios\Resource\Doctrine',
+        // 'MSBios\Form\Doctrine',
+        // 'MSBios\CPanel\Doctrine',
+
         'ZendDeveloperTools',
     ],
 
@@ -47,9 +61,7 @@ return [
             realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php',
         ],
         'config_cache_enabled' => false,
-        // 'config_cache_key' => 'application.config.cache',
         'module_map_cache_enabled' => false,
-        // 'module_map_cache_key' => 'application.module.cache',
         'cache_dir' => 'data/cache/',
     ],
 ];
