@@ -1303,16 +1303,16 @@
         },
         {
             "name": "msbios/guard-resource-doctrine",
-            "version": "v1.0.11",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource-doctrine.git",
-                "reference": "ce806da99130d83939bc8186e28c8c786808c7e2"
+                "reference": "017460715bc76cec9c3cb9e7109bfb5bd992bc64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/ce806da99130d83939bc8186e28c8c786808c7e2",
-                "reference": "ce806da99130d83939bc8186e28c8c786808c7e2",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/017460715bc76cec9c3cb9e7109bfb5bd992bc64",
+                "reference": "017460715bc76cec9c3cb9e7109bfb5bd992bc64",
                 "shasum": ""
             },
             "require": {
@@ -1346,7 +1346,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-25T14:30:42+00:00"
+            "time": "2017-09-25T15:17:44+00:00"
         },
         {
             "name": "msbios/json",
@@ -3856,16 +3856,16 @@
         },
         {
             "name": "msbios/guard-cpanel",
-            "version": "v1.0.4",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-cpanel.git",
-                "reference": "521d6dff7cbb496baf74bb7abc4eba454282abd1"
+                "reference": "2c8ce6921dca922003528590f7de34e61daaf489"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-cpanel/zipball/521d6dff7cbb496baf74bb7abc4eba454282abd1",
-                "reference": "521d6dff7cbb496baf74bb7abc4eba454282abd1",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-cpanel/zipball/2c8ce6921dca922003528590f7de34e61daaf489",
+                "reference": "2c8ce6921dca922003528590f7de34e61daaf489",
                 "shasum": ""
             },
             "require": {
@@ -3898,7 +3898,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-25T13:32:33+00:00"
+            "time": "2017-09-25T15:20:21+00:00"
         },
         {
             "name": "msbios/i18n",

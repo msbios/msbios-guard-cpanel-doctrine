@@ -38,6 +38,13 @@ return [
                             ],
                         ],
                     ],
+                    'rule' => [
+                        'options' => [
+                            'defaults' => [
+                                'controller' => Controller\RuleController::class,
+                            ],
+                        ],
+                    ],
                     'user' => [
                         'options' => [
                             'defaults' => [
@@ -56,6 +63,8 @@ return [
                 InvokableFactory::class,
             Controller\RoleController::class =>
                 InvokableFactory::class,
+            Controller\RuleController::class =>
+                InvokableFactory::class,
             Controller\UserController::class =>
                 InvokableFactory::class,
         ]
@@ -67,6 +76,8 @@ return [
                 \MSBios\Guard\Resource\Form\ResourceForm::class,
             Controller\RoleController::class =>
                 \MSBios\Guard\Resource\Form\RoleForm::class,
+            Controller\RuleController::class =>
+                \MSBios\Guard\Resource\Form\RuleForm::class,
             Controller\UserController::class =>
                 \MSBios\Guard\Resource\Form\UserForm::class,
         ]
@@ -91,6 +102,11 @@ return [
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml',
                     'ms-bios/guard/c-panel/doctrine/role/edit' =>
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/role/form.phtml',
+
+                    'ms-bios/guard/c-panel/doctrine/rule/add' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/rule/form.phtml',
+                    'ms-bios/guard/c-panel/doctrine/rule/edit' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/rule/form.phtml',
 
                     'ms-bios/guard/c-panel/doctrine/user/add' =>
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/user/form.phtml',

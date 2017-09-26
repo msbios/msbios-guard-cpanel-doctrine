@@ -46,8 +46,6 @@ return [
         'MSBios\Guard\CPanel\Doctrine',
         'MSBios\Guard\Resource\Doctrine',
         'MSBios\Resource\Doctrine',
-        // 'MSBios\Form\Doctrine',
-        // 'MSBios\CPanel\Doctrine',
 
         'ZendDeveloperTools',
     ],
