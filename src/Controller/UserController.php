@@ -43,8 +43,9 @@ class UserController extends AbstractLazyActionController
     {
         $this->getEventManager()->attach(self::EVENT_PERSIST_OBJECT, [$this, 'onPersistObject']);
         $this->getEventManager()->attach(self::EVENT_MERGE_OBJECT, [$this, 'onMergeObject']);
-        $this->getEventManager()->attach(self::EVENT_VALIDATE_ERROR, function(EventInterface $e) {
-            r($e->getParam('messages')); die();
+        $this->getEventManager()->attach(self::EVENT_VALIDATE_ERROR, function (EventInterface $e) {
+            r($e->getParam('messages'));
+            die();
         });
         parent::onDispatch($e);
     }
