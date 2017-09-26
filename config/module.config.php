@@ -24,34 +24,34 @@ return [
         'routes' => [
             'cpanel' => [
                 'child_routes' => [
-                    'resource' => [
-                        'options' => [
-                            'defaults' => [
-                                'controller' => Controller\ResourceController::class,
-                            ],
-                        ],
-                    ],
-                    'role' => [
-                        'options' => [
-                            'defaults' => [
-                                'controller' => Controller\RoleController::class,
-                            ],
-                        ],
-                    ],
-                    'rule' => [
-                        'options' => [
-                            'defaults' => [
-                                'controller' => Controller\RuleController::class,
-                            ],
-                        ],
-                    ],
-                    'user' => [
-                        'options' => [
-                            'defaults' => [
-                                'controller' => Controller\UserController::class,
-                            ],
-                        ],
-                    ],
+                    // 'resource' => [
+                    //     'options' => [
+                    //         'defaults' => [
+                    //             'controller' => Controller\ResourceController::class,
+                    //         ],
+                    //     ],
+                    // ],
+                    // 'role' => [
+                    //     'options' => [
+                    //         'defaults' => [
+                    //             'controller' => Controller\RoleController::class,
+                    //         ],
+                    //     ],
+                    // ],
+                    // 'rule' => [
+                    //     'options' => [
+                    //         'defaults' => [
+                    //             'controller' => Controller\RuleController::class,
+                    //         ],
+                    //     ],
+                    // ],
+                    // 'user' => [
+                    //  'options' => [
+                    //      'defaults' => [
+                    //          'controller' => Controller\UserController::class,
+                    //      ],
+                    //  ],
+                    // ],
                 ],
             ],
         ],
@@ -67,6 +67,17 @@ return [
                 InvokableFactory::class,
             Controller\UserController::class =>
                 InvokableFactory::class,
+        ],
+        'aliases' => [
+            // Overrider Controllers
+            \MSBios\Guard\CPanel\Controller\ResourceController::class =>
+                Controller\ResourceController::class,
+            \MSBios\Guard\CPanel\Controller\RoleController::class =>
+                Controller\RoleController::class,
+            \MSBios\Guard\CPanel\Controller\RuleController::class =>
+                Controller\RuleController::class,
+            \MSBios\Guard\CPanel\Controller\UserController::class =>
+                Controller\UserController::class,
         ]
     ],
 

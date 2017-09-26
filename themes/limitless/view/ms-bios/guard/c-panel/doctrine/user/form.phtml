@@ -74,6 +74,14 @@ $form->prepare();
             'label' => $this->translate('Confirm')
         ]); ?>
 
+        <?= $this->partial('partial/element.phtml', [
+            'element' => $form->get('roles')
+                ->setAttributes([
+                    'placeholder' => $this->translate('Confirm user password')
+                ]),
+            'label' => $this->translate('Roles')
+        ]); ?>
+
         <div class="text-right">
             <button type="reset" class="btn btn-default">Reset</button>
             <button type="submit" class="btn btn-primary">
