@@ -1253,16 +1253,16 @@
         },
         {
             "name": "msbios/guard-resource",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource.git",
-                "reference": "868df50423a1d3bc19a0a09d05e52069f64d83c9"
+                "reference": "63dc8f9a888cc0989a75d541d7c15c1c0ced23b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/868df50423a1d3bc19a0a09d05e52069f64d83c9",
-                "reference": "868df50423a1d3bc19a0a09d05e52069f64d83c9",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/63dc8f9a888cc0989a75d541d7c15c1c0ced23b6",
+                "reference": "63dc8f9a888cc0989a75d541d7c15c1c0ced23b6",
                 "shasum": ""
             },
             "require": {
@@ -1299,20 +1299,20 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-25T14:02:14+00:00"
+            "time": "2017-09-26T08:14:45+00:00"
         },
         {
             "name": "msbios/guard-resource-doctrine",
-            "version": "v1.0.12",
+            "version": "v1.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource-doctrine.git",
-                "reference": "017460715bc76cec9c3cb9e7109bfb5bd992bc64"
+                "reference": "ef523bb643c1a9dc8dc6e57c09d32de02bcc997e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/017460715bc76cec9c3cb9e7109bfb5bd992bc64",
-                "reference": "017460715bc76cec9c3cb9e7109bfb5bd992bc64",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/ef523bb643c1a9dc8dc6e57c09d32de02bcc997e",
+                "reference": "ef523bb643c1a9dc8dc6e57c09d32de02bcc997e",
                 "shasum": ""
             },
             "require": {
@@ -1346,7 +1346,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-25T15:17:44+00:00"
+            "time": "2017-09-26T07:35:32+00:00"
         },
         {
             "name": "msbios/json",
@@ -3655,16 +3655,16 @@
         },
         {
             "name": "msbios/cpanel",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "35a50e1eff55e68a32961de4edc813afa96f92f1"
+                "reference": "10bbc0bef4198a266f662c9380f50a9644896ad4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/35a50e1eff55e68a32961de4edc813afa96f92f1",
-                "reference": "35a50e1eff55e68a32961de4edc813afa96f92f1",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/10bbc0bef4198a266f662c9380f50a9644896ad4",
+                "reference": "10bbc0bef4198a266f662c9380f50a9644896ad4",
                 "shasum": ""
             },
             "require": {
@@ -3673,11 +3673,9 @@
                 "msbios/guard-cpanel": "~1.0",
                 "msbios/guard-resource": "~1.0",
                 "msbios/resource": "~1.0",
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-modulemanager": "^2.8",
+                "msbios/view": "~1.0",
                 "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
-                "zendframework/zend-mvc-plugins": "^1.0",
-                "zendframework/zend-servicemanager": "^3.3"
+                "zendframework/zend-mvc-plugins": "^1.0"
             },
             "require-dev": {
                 "msbios/application": "~1.0",
@@ -3706,7 +3704,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-14T08:06:52+00:00"
+            "time": "2017-09-26T10:22:00+00:00"
         },
         {
             "name": "msbios/cpanel-doctrine",
@@ -4050,6 +4048,52 @@
                 "php"
             ],
             "time": "2017-09-09T19:41:08+00:00"
+        },
+        {
+            "name": "msbios/view",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-view.git",
+                "reference": "24baa3db586754c07b4f8b8318b6fc7c171ec58f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-view/zipball/24baa3db586754c07b4f8b8318b6fc7c171ec58f",
+                "reference": "24baa3db586754c07b4f8b8318b6fc7c171ec58f",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/msbios": "~1.0",
+                "zendframework/zend-view": "^2.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\View\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios View",
+            "homepage": "https://github.com/msbios/msbios-view",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-09-26T10:18:07+00:00"
         },
         {
             "name": "msbios/widget",

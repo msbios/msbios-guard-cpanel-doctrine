@@ -28,7 +28,9 @@ return [
         'DoctrineORMModule',
         'DoctrineDataFixtureModule',
 
+        'MSBios\View',
         'MSBios\Doctrine',
+        'MSBios\Form\Doctrine',
         'MSBios\I18n',
         'MSBios\Widget',
         'MSBios\Theme',

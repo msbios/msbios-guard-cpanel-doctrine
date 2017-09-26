@@ -3,48 +3,109 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
+
 namespace MSBios\CPanel;
 
 /** @var \Zend\Form\Form $form */
+use Zend\Form\Element\Radio;
+
+// Add jses
+$this->headScript()
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/inputs/formatter.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/styling/uniform.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/pickers/daterangepicker.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/ui/moment/moment.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/notifications/jgrowl.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/uploaders/fileinput.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/notifications/jgrowl.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/locales/bootstrap-wysihtml5.ua-UA.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/parsers.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/toolbar.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/wysihtml5.min.js'));
+
 $form = $this->form;
 $form->prepare();
 ?>
 
-<div class="panel panel-flat">
+    <div class="panel panel-flat">
 
-    <div class="panel-body">
+        <div class="panel-body">
 
-        <?= $this->form()->openTag($form->setAttributes([
-            'class' => 'form-horizontal',
-            'role' => 'form'
-        ])); ?>
+            <?= $this->form()->openTag($form->setAttributes([
+                'class' => 'form-horizontal',
+                'role' => 'form'
+            ])); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('name')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter name')
-                ]),
-            'label' => $this->translate('Name'),
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('resource')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Select resource')
+                    ]),
+                'label' => $this->translate('Resource'),
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('access')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter access')
-                ]),
-            'label' => $this->translate('Access'),
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('name')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter name')
+                    ]),
+                'label' => $this->translate('Name'),
+            ]); ?>
 
-        <div class="text-right">
-            <button type="reset" class="btn btn-default">Reset</button>
-            <button type="submit" class="btn btn-primary">
-                Submit
-                <i class="icon-arrow-right14 position-right"></i>
-            </button>
+            <div class="form-group ">
+                <label class="col-md-2 control-label" for="name">
+                    <?= $this->translate('Access'); ?>: <span class="text-danger">*</span>
+                </label>
+                <div class="col-md-10">
+
+                    <?php
+                    /** @var Radio $element */
+                    $element = $form->get('access');
+                    ?>
+                    <?php foreach ($element->getValueOptions() as $value => $label): ?>
+                        <label class="radio-inline">
+                            <?= $this->formRadio(new Radio($element->getName(), [
+                                'value_options' => [[
+                                    'selected' => $element->getValue() == $value,
+                                    'value' => $value,
+                                    'label' => $label,
+                                    'attributes' => [
+                                        'class' => 'styled',
+                                        'checked' => 'checked',
+                                    ]
+                                ]]
+                            ])); ?>
+                        </label>
+                    <?php endforeach; ?>
+
+                </div>
+            </div>
+
+            <?php $this->partial('partial/element.phtml', [
+                'element' => $form->get('access')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter access')
+                    ]),
+                'label' => $this->translate('Access'),
+            ]); ?>
+
+            <div class="text-right">
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                    <i class="icon-arrow-right14 position-right"></i>
+                </button>
+            </div>
+
+            <?= $this->form()->closeTag(); ?>
         </div>
-
-        <?= $this->form()->closeTag(); ?>
     </div>
-</div>
+
+<?php $this->inlineScript()->captureStart(); ?>
+    $(".styled").uniform({
+    radioClass: 'choice'
+    });
+<?php $this->inlineScript()->captureEnd(); ?>

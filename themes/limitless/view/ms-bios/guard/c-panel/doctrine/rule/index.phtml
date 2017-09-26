@@ -6,6 +6,8 @@
 
 namespace MSBios\Guard\CPanel;
 
+use MSBios\Guard\Resource\Record\Rule;
+
 $this->headScript()
     ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/switch.min.js'))
     ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/switchery.min.js'))
@@ -72,8 +74,8 @@ $this->headScript()
                         <thead>
                         <tr>
                             <th><?= $this->translate('Name'); ?></th>
-                            <th><?= $this->translate('Code'); ?></th>
-                            <th><?= $this->translate('Parent'); ?></th>
+                            <th><?= $this->translate('Resource'); ?></th>
+                            <th class="text-center" width="1"><?= $this->translate('Access'); ?></th>
                             <th><?= $this->translate('Created At'); ?></th>
                             <th width="1px" class="text-center">
                                 <?= $this->translate('Actions'); ?>
@@ -82,16 +84,18 @@ $this->headScript()
                         </thead>
 
                         <tbody>
-                        <?php /** @var \MSBios\Guard\Resource\Doctrine\Entity\Resource $item */ ?>
+                        <?php /** @var \MSBios\Guard\Resource\Doctrine\Entity\Rule $item */ ?>
                         <?php foreach ($this->paginator as $item): ?>
                             <tr>
                                 <td><?= $this->escapeHtml($item->getName()); ?></td>
-                                <td><?= $this->escapeHtml($item->getCode()); ?></td>
-                                <td>
-                                    <?php if ($parent = $item->getParent()) :?>
-                                        <?= $this->escapeHtml($parent->getName()); ?>
-                                    <?php endif; ?>
+                                <td><?= $this->escapeHtml($item->getResource()->getName()); ?></td>
+
+                                <td class="text-center">
+                                    <span class="label <?= $this->toggle(Rule::ACCESS_ALLOW, $item->getAccess() ,'label-success', 'label-danger');?>">
+                                        <?= $this->escapeHtml($item->getAccess()); ?>
+                                    </span>
                                 </td>
+
                                 <td>
                                     <?= $this->dateFormat(
                                         $item->getCreatedAt(),
