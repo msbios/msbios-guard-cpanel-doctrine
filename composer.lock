@@ -1253,16 +1253,16 @@
         },
         {
             "name": "msbios/guard-resource",
-            "version": "v1.0.9",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource.git",
-                "reference": "63dc8f9a888cc0989a75d541d7c15c1c0ced23b6"
+                "reference": "39fd163b08fab4ad7260fa4b5890d9aa2eb10181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/63dc8f9a888cc0989a75d541d7c15c1c0ced23b6",
-                "reference": "63dc8f9a888cc0989a75d541d7c15c1c0ced23b6",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource/zipball/39fd163b08fab4ad7260fa4b5890d9aa2eb10181",
+                "reference": "39fd163b08fab4ad7260fa4b5890d9aa2eb10181",
                 "shasum": ""
             },
             "require": {
@@ -1299,20 +1299,20 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-26T08:14:45+00:00"
+            "time": "2017-09-26T19:02:48+00:00"
         },
         {
             "name": "msbios/guard-resource-doctrine",
-            "version": "v1.0.23",
+            "version": "v1.0.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource-doctrine.git",
-                "reference": "39f6ca0861eaae8b0cb748ce360637e32e4eda25"
+                "reference": "060c93319c1eb75aecc517cebed8a59a3d6f8515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/39f6ca0861eaae8b0cb748ce360637e32e4eda25",
-                "reference": "39f6ca0861eaae8b0cb748ce360637e32e4eda25",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/060c93319c1eb75aecc517cebed8a59a3d6f8515",
+                "reference": "060c93319c1eb75aecc517cebed8a59a3d6f8515",
                 "shasum": ""
             },
             "require": {
@@ -1346,7 +1346,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-26T12:55:25+00:00"
+            "time": "2017-09-26T19:05:39+00:00"
         },
         {
             "name": "msbios/json",

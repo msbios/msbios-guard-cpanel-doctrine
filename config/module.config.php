@@ -20,43 +20,6 @@ return [
         ],
     ],
 
-    'router' => [
-        'routes' => [
-            'cpanel' => [
-                'child_routes' => [
-                    // 'resource' => [
-                    //     'options' => [
-                    //         'defaults' => [
-                    //             'controller' => Controller\ResourceController::class,
-                    //         ],
-                    //     ],
-                    // ],
-                    // 'role' => [
-                    //     'options' => [
-                    //         'defaults' => [
-                    //             'controller' => Controller\RoleController::class,
-                    //         ],
-                    //     ],
-                    // ],
-                    // 'rule' => [
-                    //     'options' => [
-                    //         'defaults' => [
-                    //             'controller' => Controller\RuleController::class,
-                    //         ],
-                    //     ],
-                    // ],
-                    // 'user' => [
-                    //  'options' => [
-                    //      'defaults' => [
-                    //          'controller' => Controller\UserController::class,
-                    //      ],
-                    //  ],
-                    // ],
-                ],
-            ],
-        ],
-    ],
-
     'controllers' => [
         'factories' => [
             Controller\ResourceController::class =>

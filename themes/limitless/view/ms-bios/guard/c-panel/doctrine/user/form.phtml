@@ -3,93 +3,149 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
+
 namespace MSBios\CPanel;
+
+use Zend\Form\Element\Radio;
+
+$this->headScript()
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/selects/select2.min.js'))
+
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/inputs/formatter.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/styling/uniform.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/pickers/daterangepicker.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/ui/moment/moment.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/notifications/jgrowl.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/uploaders/fileinput.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/notifications/jgrowl.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/locales/bootstrap-wysihtml5.ua-UA.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/parsers.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/toolbar.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/wysihtml5.min.js'))
+;
 
 /** @var \Zend\Form\Form $form */
 $form = $this->form;
 $form->prepare();
 ?>
 
-<div class="panel panel-flat">
+    <div class="panel panel-flat">
 
-    <div class="panel-body">
+        <div class="panel-body">
 
-        <?= $this->form()->openTag($form->setAttributes([
-            'class' => 'form-horizontal',
-            'role' => 'form'
-        ])); ?>
+            <?= $this->form()->openTag($form->setAttributes([
+                'class' => 'form-horizontal',
+                'role' => 'form'
+            ])); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('firstname')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter user first name')
-                ]),
-            'label' => $this->translate('First Name'),
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('firstname')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter user first name')
+                    ]),
+                'label' => $this->translate('First Name'),
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('lastname')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter user last name')
-                ]),
-            'label' => $this->translate('Last Name')
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('lastname')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter user last name')
+                    ]),
+                'label' => $this->translate('Last Name')
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('username')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter username')
-                ]),
-            'label' => $this->translate('Username')
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('username')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter username')
+                    ]),
+                'label' => $this->translate('Username')
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('email')
-                ->setAttributes([
-                    'required' => 'required',
-                    'placeholder' => $this->translate('Enter user email'),
-                    'autocomplete' => 'off'
-                ]),
-            'label' => $this->translate('Email')
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('email')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter user email'),
+                        'autocomplete' => 'off'
+                    ]),
+                'label' => $this->translate('Email')
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('password')
-                ->setAttributes([
-                    'placeholder' => $this->translate('Enter user password'),
-                    'autocomplete' => 'off'
-                ]),
-            'label' => $this->translate('Password')
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('password')
+                    ->setAttributes([
+                        'placeholder' => $this->translate('Enter user password'),
+                        'autocomplete' => 'off'
+                    ]),
+                'label' => $this->translate('Password')
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('confirm')
-                ->setAttributes([
-                    'placeholder' => $this->translate('Confirm user password'),
-                    'autocomplete' => 'off'
-                ]),
-            'label' => $this->translate('Confirm')
-        ]); ?>
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('confirm')
+                    ->setAttributes([
+                        'placeholder' => $this->translate('Confirm user password'),
+                        'autocomplete' => 'off'
+                    ]),
+                'label' => $this->translate('Confirm')
+            ]); ?>
 
-        <?= $this->partial('partial/element.phtml', [
-            'element' => $form->get('roles')
-                ->setAttributes([
-                    'placeholder' => $this->translate('Confirm user password')
-                ]),
-            'label' => $this->translate('Roles')
-        ]); ?>
+            <div class="form-group ">
+                <label class="col-md-2 control-label" for="confirm">
+                    <?= $this->translate('Roles'); ?>:
+                </label>
+                <div class="col-md-10">
+                    <?= $this->formElement($form->get('roles')->setAttribute('class', 'select')); ?>
+                </div>
+            </div>
 
-        <div class="text-right">
-            <button type="reset" class="btn btn-default">Reset</button>
-            <button type="submit" class="btn btn-primary">
-                Submit
-                <i class="icon-arrow-right14 position-right"></i>
-            </button>
+            <div class="form-group ">
+                <label class="col-md-2 control-label" for="name">
+                    <?= $this->translate('State'); ?>: <span class="text-danger">*</span>
+                </label>
+                <div class="col-md-10">
+
+                    <?php
+                    /** @var Radio $element */
+                    $element = $form->get('state');
+                    ?>
+                    <?php foreach ($element->getValueOptions() as $value => $label): ?>
+                        <label class="radio-inline">
+                            <?= $this->formRadio(new Radio($element->getName(), [
+                                'value_options' => [[
+                                    'selected' => $element->getValue() == $value,
+                                    'value' => $value,
+                                    'label' => $label,
+                                    'attributes' => [
+                                        'class' => 'styled',
+                                        'checked' => 'checked',
+                                    ]
+                                ]]
+                            ])); ?>
+                        </label>
+                    <?php endforeach; ?>
+
+                </div>
+            </div>
+
+            <div class="text-right">
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                    <i class="icon-arrow-right14 position-right"></i>
+                </button>
+            </div>
+
+            <?= $this->form()->closeTag(); ?>
         </div>
-
-        <?= $this->form()->closeTag(); ?>
     </div>
-</div>
+
+<?php $this->inlineScript()->captureStart(); ?>
+    $('.select').select2();
+    $(".styled").uniform({
+        radioClass: 'choice'
+    });
+<?php $this->inlineScript()->captureEnd(); ?>
