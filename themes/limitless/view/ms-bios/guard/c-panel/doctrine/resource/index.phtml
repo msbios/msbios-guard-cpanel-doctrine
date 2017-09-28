@@ -85,7 +85,11 @@ $this->headScript()
                         <?php /** @var \MSBios\Guard\Resource\Doctrine\Entity\Resource $item */ ?>
                         <?php foreach ($this->paginator as $item): ?>
                             <tr>
-                                <td><?= $this->escapeHtml($item->getName()); ?></td>
+                                <td>
+                                    <a href="<?= $this->url('cpanel/resource-permission', ['resource_id' => $item->getId()]); ?>">
+                                        <?= $this->escapeHtml($item->getName()); ?>
+                                    </a>
+                                </td>
                                 <td><?= $this->escapeHtml($item->getCode()); ?></td>
                                 <td>
                                     <?php if ($parent = $item->getParent()) :?>
