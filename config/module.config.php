@@ -24,6 +24,8 @@ return [
         'factories' => [
             Controller\ResourceController::class =>
                 InvokableFactory::class,
+            Controller\Resource\PermissionController::class =>
+                InvokableFactory::class,
             Controller\RoleController::class =>
                 InvokableFactory::class,
             Controller\RuleController::class =>
@@ -35,6 +37,8 @@ return [
             // Overrider Controllers
             \MSBios\Guard\CPanel\Controller\ResourceController::class =>
                 Controller\ResourceController::class,
+            \MSBios\Guard\CPanel\Controller\Resource\PermissionController::class =>
+                Controller\Resource\PermissionController::class,
             \MSBios\Guard\CPanel\Controller\RoleController::class =>
                 Controller\RoleController::class,
             \MSBios\Guard\CPanel\Controller\RuleController::class =>
@@ -46,6 +50,8 @@ return [
 
     'form_elements' => [
         'aliases' => [
+            Controller\Resource\PermissionController::class =>
+                \MSBios\Guard\Resource\Form\PermissionForm::class,
             Controller\ResourceController::class =>
                 \MSBios\Guard\Resource\Form\ResourceForm::class,
             Controller\RoleController::class =>
@@ -66,6 +72,11 @@ return [
                 ],
 
                 'template_map' => [
+
+                    'ms-bios/guard/c-panel/doctrine/resource/permission/add' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/permission/form.phtml',
+                    'ms-bios/guard/c-panel/doctrine/resource/permission/edit' =>
+                        __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/permission/form.phtml',
 
                     'ms-bios/guard/c-panel/doctrine/resource/add' =>
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/form.phtml',
