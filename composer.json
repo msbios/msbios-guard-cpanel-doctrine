@@ -23,10 +23,6 @@
       "MSBiosTest\\Guard\\CPanel\\Doctrine\\": "tests/"
     }
   },
-  "require": {
-    "msbios/authentication-doctrine": "^1.0",
-    "msbios/guard-resource-doctrine": "^1.0"
-  },
   "require-dev": {
     "msbios/application": "~1.0",
     "msbios/cpanel-doctrine": "^1.0",
