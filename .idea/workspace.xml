@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b9b2d8c-689e-4bc1-ba21-3081489b612d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/info.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/msbios-guard-cpanel-doctrine-module.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/msbios-guard-cpanel-doctrine.iml" afterPath="$PROJECT_DIR$/.idea/msbios-guard-cpanel-doctrine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/module.config.php" afterPath="$PROJECT_DIR$/config/module.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Module.php" afterPath="$PROJECT_DIR$/src/Module.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
