@@ -10,16 +10,6 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
 
-    'doctrine' => [
-        'authentication' => [
-            'orm_default' => [
-                'identity_class' => \MSBios\Guard\Resource\Doctrine\UserInterface::class,
-                'identity_property' => 'username',
-                'credential_property' => 'password'
-            ],
-        ],
-    ],
-
     'controllers' => [
         'factories' => [
             Controller\ResourceController::class =>

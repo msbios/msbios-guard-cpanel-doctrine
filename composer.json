@@ -24,15 +24,13 @@
     }
   },
   "require": {
-    "msbios/authentication-doctrine": "~1.0",
-    "msbios/guard-resource-doctrine": "~1.0"
+    "msbios/authentication-doctrine": "^1.0",
+    "msbios/guard-resource-doctrine": "^1.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.7",
-    "zendframework/zend-test": "^3.1",
-    "squizlabs/php_codesniffer": "^3.0",
     "msbios/application": "~1.0",
     "msbios/cpanel-doctrine": "^1.0",
+    "msbios/test": "^1.0",
     "msbios/debug": "^1.0"
   },
   "scripts": {
@@ -40,14 +38,21 @@
     "cs-fix": "phpcbf",
     "test": [
       "@cs-check",
-      "phpunit"
+      "phpunit --colors=always"
     ],
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "upload-coverage": "coveralls -v",
     "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
-    "serve": "php -S 0.0.0.0:3107 -t bin bin/msbios-guard-cpanel-doctrine-module.php",
+    "serve": "php -S 0.0.0.0:3107 -t public public/index.php",
     "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
     "themes": [
       "cd bin && ln -s ../vendor/msbios/cpanel/themes/limitless/public limitless",
       "cd bin && ln -s ../vendor/msbios/application/themes/default/public default"
     ]
+  },
+  "extra": {
+    "zf": {
+      "component": "MSBios\\Guard\\CPanel\\Doctrine"
+    }
   }
 }

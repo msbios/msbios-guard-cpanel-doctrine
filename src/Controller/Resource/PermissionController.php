@@ -58,13 +58,15 @@ class PermissionController extends AbstractLazyActionController
 
         /** @var Object $object */
         $object = $this->getEntityManager()->find(
-            Resource::class, $id
+            Resource::class,
+            $id
         );
 
         /** @var int $id */
-        if (!$object) {
+        if (! $object) {
             return $this->redirect()->toRoute(
-                'cpanel/resource', ['action' => 'add']
+                'cpanel/resource',
+                ['action' => 'add']
             );
         }
 
