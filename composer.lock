@@ -2047,16 +2047,16 @@
         },
         {
             "name": "msbios/cpanel",
-            "version": "v1.0.30",
+            "version": "v1.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "5c1ded3f9103ccd1dbea6734028ab513ad86d852"
+                "reference": "cf02d93a9921337f02796da5a3bd287b3863e5ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/5c1ded3f9103ccd1dbea6734028ab513ad86d852",
-                "reference": "5c1ded3f9103ccd1dbea6734028ab513ad86d852",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/cf02d93a9921337f02796da5a3bd287b3863e5ec",
+                "reference": "cf02d93a9921337f02796da5a3bd287b3863e5ec",
                 "shasum": ""
             },
             "require": {
@@ -2101,20 +2101,20 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-21T12:31:07+00:00"
+            "time": "2018-03-21T14:03:07+00:00"
         },
         {
             "name": "msbios/cpanel-doctrine",
-            "version": "v1.0.24",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel-doctrine.git",
-                "reference": "6512b52215ee8dba272b0ce247c2395ef997355a"
+                "reference": "27f1d5ae1f513fd6d5cf52d6c66ef8a403e5d6d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel-doctrine/zipball/6512b52215ee8dba272b0ce247c2395ef997355a",
-                "reference": "6512b52215ee8dba272b0ce247c2395ef997355a",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel-doctrine/zipball/27f1d5ae1f513fd6d5cf52d6c66ef8a403e5d6d5",
+                "reference": "27f1d5ae1f513fd6d5cf52d6c66ef8a403e5d6d5",
                 "shasum": ""
             },
             "require-dev": {
@@ -2160,7 +2160,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-21T13:26:30+00:00"
+            "time": "2018-03-21T14:08:20+00:00"
         },
         {
             "name": "msbios/db",
