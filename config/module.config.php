@@ -101,9 +101,6 @@ return [
     ],
 
     Module::class => [
-
-        // Module listeners
-        'listeners' => [
-        ]
+        // ...
     ],
 ];

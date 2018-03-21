@@ -6,11 +6,12 @@
  */
 namespace MSBios\Guard\CPanel\Doctrine\Controller;
 
-use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractLazyActionController;
+use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractActionController;
 use MSBios\Guard\CPanel\Controller\UserController as DefaultUserController;
 use MSBios\Guard\Resource\Doctrine\Entity\User;
 use Zend\Crypt\Password\Bcrypt;
 use Zend\EventManager\EventInterface;
+use Zend\EventManager\EventManagerInterface;
 use Zend\Mvc\MvcEvent;
 use Zend\Stdlib\Parameters;
 
@@ -18,7 +19,7 @@ use Zend\Stdlib\Parameters;
  * Class UserController
  * @package MSBios\Guard\CPanel\Doctrine\Controller
  */
-class UserController extends AbstractLazyActionController
+class UserController extends AbstractActionController
 {
     /**
      * UserController constructor.
@@ -41,12 +42,11 @@ class UserController extends AbstractLazyActionController
      */
     public function onDispatch(MvcEvent $e)
     {
-        $this->getEventManager()->attach(self::EVENT_PERSIST_OBJECT, [$this, 'onPersistObject']);
-        $this->getEventManager()->attach(self::EVENT_MERGE_OBJECT, [$this, 'onMergeObject']);
-        $this->getEventManager()->attach(self::EVENT_VALIDATE_ERROR, function (EventInterface $e) {
-            r($e->getParam('messages'));
-            die();
-        });
+        /** @var EventManagerInterface $em */
+        $em = $this->getEventManager();
+        $em->attach(self::EVENT_PERSIST_OBJECT, [$this, 'onPersistObject']);
+        $em->attach(self::EVENT_MERGE_OBJECT, [$this, 'onMergeObject']);
+        $em->attach(self::EVENT_VALIDATE_ERROR, [$this, 'onValidateError']);
         parent::onDispatch($e);
     }
 
@@ -84,5 +84,14 @@ class UserController extends AbstractLazyActionController
             $bcrypt = new Bcrypt;
             $entity->setPassword($bcrypt->create($data['password']));
         }
+    }
+
+    /**
+     * @param EventInterface $e
+     */
+    public function onValidateError(EventInterface $e)
+    {
+        r($e->getParam('messages'));
+        die();
     }
 }

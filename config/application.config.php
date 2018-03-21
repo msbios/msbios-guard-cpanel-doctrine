@@ -8,7 +8,11 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Test',
+
+        'Zend\Db',
+        'Zend\Paginator',
+        'Zend\Cache',
+        'Zend\Serializer',
         'Zend\I18n',
         'Zend\Navigation',
         'Zend\Mvc\Plugin\FilePrg',
@@ -22,7 +26,18 @@ return [
         'Zend\Session',
         'Zend\Router',
         'Zend\Validator',
+
+        'DoctrineModule',
+        'DoctrineORMModule',
         'DoctrineDataFixtureModule',
+
+        'MSBios\Guard\Resource',
+        'MSBios\Authentication',
+        'MSBios\Db',
+        'MSBios\Form',
+        'MSBios\Hydrator',
+        'MSBios\Cache',
+        'MSBios\Test',
         'MSBios\View',
         'MSBios\I18n',
         'MSBios\Widget',
@@ -33,10 +48,19 @@ return [
         'MSBios\Guard',
         'MSBios\Guard\CPanel',
         'MSBios\CPanel',
+
+        'MSBios\Doctrine',
+        'MSBios\Form\Doctrine',
+        'MSBios\Authentication\Doctrine',
+        'MSBios\Guard\Doctrine',
+        'MSBios\Guard\Resource\Doctrine',
         'MSBios\CPanel\Doctrine',
         'MSBios\Guard\CPanel\Doctrine',
         'MSBios\Resource\Doctrine',
+        'MSBios\Guard\CPanel\Doctrine',
+
         'ZendDeveloperTools',
+
     ],
     'module_listener_options' => [
         'module_paths' => [
