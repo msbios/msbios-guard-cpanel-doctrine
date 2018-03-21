@@ -4,12 +4,14 @@
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  *
  */
+
 namespace MSBios\Guard\CPanel\Doctrine\Controller;
 
 use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractActionController;
 use MSBios\Guard\CPanel\Controller\UserController as DefaultUserController;
 use MSBios\Guard\Resource\Doctrine\Entity\User;
 use Zend\Crypt\Password\Bcrypt;
+use Zend\Crypt\Password\PasswordInterface;
 use Zend\EventManager\EventInterface;
 use Zend\EventManager\EventManagerInterface;
 use Zend\Mvc\MvcEvent;
@@ -46,7 +48,7 @@ class UserController extends AbstractActionController
         $em = $this->getEventManager();
         $em->attach(self::EVENT_PERSIST_OBJECT, [$this, 'onPersistObject']);
         $em->attach(self::EVENT_MERGE_OBJECT, [$this, 'onMergeObject']);
-        $em->attach(self::EVENT_VALIDATE_ERROR, [$this, 'onValidateError']);
+        // $em->attach(self::EVENT_VALIDATE_ERROR, [$this, 'onValidateError']);
         parent::onDispatch($e);
     }
 
@@ -79,8 +81,7 @@ class UserController extends AbstractActionController
         $data = $e->getParam('data');
 
         if (! empty($data['password'])) {
-
-            /** @var Bcrypt $bcrypt */
+            /** @var PasswordInterface $bcrypt */
             $bcrypt = new Bcrypt;
             $entity->setPassword($bcrypt->create($data['password']));
         }
@@ -88,10 +89,11 @@ class UserController extends AbstractActionController
 
     /**
      * @param EventInterface $e
+     * @todo need realization in base controller
      */
     public function onValidateError(EventInterface $e)
     {
-        r($e->getParam('messages'));
-        die();
+        //r($e->getParam('messages'));
+        //die();
     }
 }
