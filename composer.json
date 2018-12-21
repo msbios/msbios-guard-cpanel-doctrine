@@ -30,7 +30,6 @@
     "msbios/authentication": "^1.0",
     "msbios/guard": "^1.0",
     "msbios/guard-cpanel": "^1.0",
-
     "msbios/guard-doctrine": "^1.0",
     "msbios/resource-doctrine": "^1.0",
     "msbios/cpanel-doctrine": "^1.0",
@@ -49,7 +48,7 @@
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "upload-coverage": "coveralls -v",
     "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
-    "serve": "php -S 0.0.0.0:3107 -t public index.php",
+    "serve": "php -S 0.0.0.0:3107 -t public public/index.php",
     "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
     "themes": [
       "cd public && ln -s ../vendor/msbios/cpanel/themes/limitless/public limitless",

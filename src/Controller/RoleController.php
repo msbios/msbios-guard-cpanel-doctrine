@@ -6,7 +6,7 @@
  */
 namespace MSBios\Guard\CPanel\Doctrine\Controller;
 
-use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractLazyActionController;
+use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractActionController;
 use MSBios\Guard\CPanel\Controller\RoleController as DefaultRoleController;
 use MSBios\Guard\Resource\Doctrine\Entity\Role;
 
@@ -14,21 +14,25 @@ use MSBios\Guard\Resource\Doctrine\Entity\Role;
  * Class RoleController
  * @package MSBios\Guard\CPanel\Doctrine\Controller
  */
-class RoleController extends AbstractLazyActionController
+class RoleController extends AbstractActionController
 {
     /**
-     * RoleController constructor.
-     */
-    public function __construct()
-    {
-        $this->setObjectPrototype(new Role);
-    }
-
-    /**
+     * @inheritdoc
+     *
      * @return string
      */
     public function getResourceId()
     {
         return DefaultRoleController::class;
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @return mixed|Role
+     */
+    protected static function factory()
+    {
+        return new Role;
     }
 }

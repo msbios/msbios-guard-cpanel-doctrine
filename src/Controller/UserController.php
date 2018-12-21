@@ -24,14 +24,8 @@ use Zend\Stdlib\Parameters;
 class UserController extends AbstractActionController
 {
     /**
-     * UserController constructor.
-     */
-    public function __construct()
-    {
-        $this->setObjectPrototype(new User);
-    }
-
-    /**
+     * @inheritdoc
+     *
      * @return string
      */
     public function getResourceId()
@@ -40,7 +34,18 @@ class UserController extends AbstractActionController
     }
 
     /**
+     * @inheritdoc
+     *
+     * @return mixed|User
+     */
+    protected static function factory()
+    {
+        return new User;
+    }
+
+    /**
      * @param MvcEvent $e
+     * @return mixed|void
      */
     public function onDispatch(MvcEvent $e)
     {

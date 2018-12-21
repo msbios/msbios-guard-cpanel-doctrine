@@ -6,43 +6,32 @@
 
 namespace MSBios\Guard\CPanel\Doctrine;
 
-use MSBios\ModuleInterface;
-use Zend\Loader\AutoloaderFactory;
-use Zend\Loader\StandardAutoloader;
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-
 /**
  * Class Module
  * @package MSBios\Guard\CPanel\Doctrine
  */
-class Module implements
-    ModuleInterface,
-    AutoloaderProviderInterface
+class Module extends \MSBios\Module
 {
     /** @const VERSION */
     const VERSION = '1.0.13';
 
     /**
-     * @return mixed
+     * @inheritdoc
+     *
+     * @return string
      */
-    public function getConfig()
+    protected function getDir()
     {
-        return include __DIR__ . '/../config/module.config.php';
+        return __DIR__;
     }
 
     /**
-     * Return an array for passing to Zend\Loader\AutoloaderFactory.
+     * @inheritdoc
      *
-     * @return array
+     * @return string
      */
-    public function getAutoloaderConfig()
+    protected function getNamespace()
     {
-        return [
-            AutoloaderFactory::STANDARD_AUTOLOADER => [
-                StandardAutoloader::LOAD_NS => [
-                    __NAMESPACE__ => __DIR__,
-                ],
-            ],
-        ];
+        return __NAMESPACE__;
     }
 }

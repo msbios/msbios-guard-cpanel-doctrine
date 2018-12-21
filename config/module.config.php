@@ -6,6 +6,7 @@
 
 namespace MSBios\Guard\CPanel\Doctrine;
 
+use MSBios\CPanel\Doctrine\Factory\ControllerFactory;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -13,15 +14,15 @@ return [
     'controllers' => [
         'factories' => [
             Controller\ResourceController::class =>
-                InvokableFactory::class,
+                ControllerFactory::class,
             Controller\Resource\PermissionController::class =>
                 InvokableFactory::class,
             Controller\RoleController::class =>
-                InvokableFactory::class,
+                ControllerFactory::class,
             Controller\RuleController::class =>
-                InvokableFactory::class,
+                ControllerFactory::class,
             Controller\UserController::class =>
-                InvokableFactory::class,
+                ControllerFactory::class,
         ],
         'aliases' => [
             // Overrider Controllers
@@ -62,7 +63,6 @@ return [
                 ],
 
                 'template_map' => [
-
                     'ms-bios/guard/c-panel/doctrine/resource/permission/add' =>
                         __DIR__ . '/../themes/limitless/view/ms-bios/guard/c-panel/doctrine/resource/permission/form.phtml',
                     'ms-bios/guard/c-panel/doctrine/resource/permission/edit' =>
@@ -98,9 +98,5 @@ return [
                 ],
             ],
         ],
-    ],
-
-    Module::class => [
-        // ...
     ],
 ];
